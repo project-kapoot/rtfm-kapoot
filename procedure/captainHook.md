@@ -1,36 +1,35 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
 ---
 
 
-# Mise en place du véricateur des message de commit
+# Mise en place du vérificateur des messages de commit
 
 pour mettre en place le vérificateur de commit en local ( sur le PC du dev). 
 nous alons intaller 2 choses: 
+
 - [CaptainHook](https://php.captainhook.info/index.html)
 - [ramsey/conventional-commits](ramsey/conventional-commits)
 
 
 ## Installation de ramsey/conventional-commits
 
-ramsey/conventional-commits est une librarie php, qui perme de vérifié les message de commit. 
+ramsey/conventional-commits est une librarie php, qui permet de vérifier les messages de commit. 
 
-### procédure install ramsey/convention-commits
+### procédure d'installation de ramsey/convention-commits
 
-pour l'installer, dans votre projet PHP, taper : `composer require --dev ramsey/conventional-commits`
+pour l'installer, dans votre projet PHP, tapez : `composer require --dev ramsey/conventional-commits`
 
 et c'est installé!
 
 ## Installation de CaptainHook
 
-CaptainHook est une librarie PHP qui permet de lancer des script et de lancer des action automatique lors divers action git, ex: _git commit_ 
+CaptainHook est une librarie PHP qui permet de lancer des scripts et d'effectuer des action automatiques lors de divers action Git, ex: _git commit_ 
 
 ### procédure d'installation de CaptainHook 
 
-pour intaller, taper : `composer require --dev captainhook/captainhook`
+pour l'intaller, tapez : `composer require --dev captainhook/captainhook`
 
 ### configuration de captainHook
 
@@ -51,7 +50,7 @@ ensuite place à la configuration, on va crée un fichier de configuration _capt
 
 ce code appele la validateur Ramsey et empeche le commit si le message ne respecte pas le conventional commit. 
 
-Ramsey, fournit aussi un assistant pour les message de commit, pour l'activer, rajouter ce code dans le fichier de configuration : 
+Ramsey, fournit aussi un assistant pour les messages de commit, pour l'activer, rajoutez ce code dans le fichier de configuration : 
 
 ```json
 {
@@ -73,11 +72,11 @@ pour que CaptainHook, soit fonctionnel, il faut l'activer afin qui intercepte le
 
 #### Activation manuel
 
-pour l'activer, taper : `vendor/bin/captainhook install`
+pour l'activer, tapez : `vendor/bin/captainhook install`
 
-#### Activiation automatique
+#### Activation automatique
 
-pour s'assurer que les dev, n'oublie pas d'activer cette action, on peut lancer cette commande automatiquement après l'installation des dépendance. pour cela dans le _composer.json_ ajouter cette ligne : `vendor/bin/captainhook install -sf` dans le **post-install-cmd**
+pour s'assurer que les dev, n'oublient pas d'activer cette action, on peut lancer cette commande automatiquement après l'installation des dépendances. pour cela dans le _composer.json_ ajouter cette ligne : `vendor/bin/captainhook install -sf` dans le **post-install-cmd**
 
 ```json
 {

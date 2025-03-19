@@ -74,7 +74,7 @@ pour que CaptainHook, soit fonctionnel, il faut l'activer afin qui intercepte le
 
 pour l'activer, tapez : `vendor/bin/captainhook install`
 
-#### Activiation automatique
+#### Activation automatique
 
 pour s'assurer que les dev, n'oublient pas d'activer cette action, on peut lancer cette commande automatiquement après l'installation des dépendances. pour cela dans le _composer.json_ ajouter cette ligne : `vendor/bin/captainhook install -sf` dans le **post-install-cmd**
 

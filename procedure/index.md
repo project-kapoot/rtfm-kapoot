@@ -4,7 +4,7 @@ layout: default
 ---
 
 
-# La Liste des différente procédure 
+# Liste des différentes procédures 
 
 - [installation de captain Hook](captainHook.md)
 - [procédure git](processusGit.md)
